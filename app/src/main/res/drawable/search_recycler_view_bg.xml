@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp" />
+    <solid android:color="@color/search_recyclerview_bg" />
+    <stroke
+        android:width="2dp"
+        android:color="#d9e4e2" />
+</shape>

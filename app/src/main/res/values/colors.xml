@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#f5f8fb</color>
+    <color name="purple_700">#f5f8fb</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--  custom color  -->
+    <color name="app_bg">#f5f8fb</color>
+    <color name="app_bg_color">#2dc992</color>
+    <color name="user_guideline_bg_color">#D82DC992</color>
+    <color name="search_bare_bg_color">#d3e0dc</color>
+    <color name="search_recyclerview_bg">#f2f8f6</color>
+    <color name="search_bare_color">#bbcac6</color>
+    <color name="search_bare_utc_font_color">#838383</color>
+    <color name="zone_text_color">#0f8766</color>
+    <color name="date_time_color">#17ab83</color>
+    <color name="zone_distance_color">#575657</color>
+    <color name="zone_utc_txt_color">#747578</color>
+    <color name="current_time_color">#bbcac6</color>
+    <color name="good_work_state_color">#2dc992</color>
+    <color name="not_so_good_work_state_color">#ff9f00</color>
+    <color name="not_good_work_state_color">#fa4e56</color>
+    <color name="night">#efefee</color>
+    <color name="day">#ffffff</color>
+    <color name="check_box_color">#1a8e8d</color>
+    <color name="menu_text_color">#666666</color>
+    <color name="country_color">#414042</color>
+    <color name="font_black">#414042</color>
+    <color name="alert_font_color">#5b5b5b</color>
+    <color name="alert_yes_btn_color">#fb4d56</color>
+    <color name="tap_target_circle_color">#E6FFF172</color>
+
+    <color name="refresh_btn_disable_color">#7addbb</color>
+    <color name="refresh_btn_enable_color">#ffffff</color>
+
+    <color name="menu_unselectable_bg">#f5f8fb</color>
+    <color name="menu_selectable_bg">#bbcac6</color>
+
+</resources>

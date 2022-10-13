@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/timeDatePickerDialog"
+    android:background="@drawable/alert_dialog_bg"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <DatePicker
+        android:id="@+id/date_picker_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:calendarTextColor="@color/black"
+        android:background="@drawable/alert_dialog_bg"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dee0df" />
+
+    <TimePicker
+        android:id="@+id/time_picker_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:timePickerMode="spinner"
+        android:calendarTextColor="@color/black"
+        android:background="@drawable/alert_dialog_bg"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dee0df" />
+
+    <Button
+        android:id="@+id/setTimeDateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_date_dialog_btn_bg"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Apply"
+        android:textAllCaps="false"
+        android:textColor="@color/app_bg_color"
+        android:fontFamily="@font/roboto_bold"/>
+
+</LinearLayout>

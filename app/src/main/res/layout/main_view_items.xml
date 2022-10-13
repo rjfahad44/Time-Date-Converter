@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/utcTimeDateContainerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/item_bg"
+    android:backgroundTint="@color/night"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingStart="5dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp">
+
+    <!--    Country Flag    -->
+    <RelativeLayout
+        android:id="@+id/leftRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/rightRelativeLayout">
+
+        <ImageView
+            android:id="@+id/country_flag"
+            android:layout_width="33dp"
+            android:layout_height="23dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitCenter"
+            tool:ignore="ContentDescription"
+            tool:src="@drawable/bd" />
+
+        <!--  1st Column  -->
+        <TextView
+            android:id="@+id/tvCityId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/country_flag"
+            android:fontFamily="@font/roboto_bold"
+            android:text="North American Central Sff dfgs sdfasd"
+            android:textColor="@color/zone_text_color"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightRelativeLayout"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/tvUtcTimeDifferenceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/font_black"
+            android:textSize="20sp"
+            tool:ignore="RelativeOverlap"
+            tool:text="05:00" />
+
+        <com.ft.time_converter.text_Clock.MyTextClock
+            android:id="@+id/tvCurrentTimeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUtcTimeDifferenceId"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-2dp"
+            android:fontFamily="@font/roboto_medium"
+            android:format12Hour="hh:mm:ss a"
+            android:textColor="@color/zone_utc_txt_color"
+            android:textSize="14sp"
+            tool:text="05:40:13 AM" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutUtcTimeAndDifferenceFromFirstCityId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leftRelativeLayout"
+        android:layout_marginStart="47dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLocalUtcTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/zone_utc_txt_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tool:text="AST" />
+
+        <TextView
+            android:id="@+id/tvUtcTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/zone_utc_txt_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tool:text="(UTC +6)" />
+
+        <TextView
+            android:id="@+id/tvTimeDifferenceFromFirstCityId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/zone_distance_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tool:text="Bangladesh +5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDateContainerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutUtcTimeAndDifferenceFromFirstCityId"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        tool:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/imgDayNight"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_sun_icon"
+            tool:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvDateId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/date_time_color"
+            android:textSize="14sp"
+            tool:text="Wednesday, 19 jan 2022" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWorkState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutUtcTimeAndDifferenceFromFirstCityId"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/work_state_bg"
+        android:backgroundTint="@color/not_so_good_work_state_color"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        tool:text="Not So Good" />
+
+</RelativeLayout>

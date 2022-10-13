@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toole="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutUtcId"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:layout_marginTop="2dp"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:background="@drawable/shadow_effect"
+    android:gravity="center"
+    android:elevation="5dp"
+    android:translationZ="5dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_global_utc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_vertical"
+        android:text="UTC"
+        android:textColor="@color/font_black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/utc_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center_vertical"
+        android:textColor="@color/date_time_color"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        toole:text="Thursday, 08 MAr 2022" />
+
+    <TextView
+        android:id="@+id/utc_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_vertical"
+        android:textColor="@color/font_black"
+        android:textSize="20sp"
+        toole:text="02:45 AM" />
+
+</LinearLayout>

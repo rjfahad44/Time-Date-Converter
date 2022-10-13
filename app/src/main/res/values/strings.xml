@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Time Date Converter</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="todo">TODO</string>
+
+    <string name="navigation_drawer_open">drawer open</string>
+    <string name="navigation_drawer_close">drawer close</string>
+
+    <!-- Admob AD ON or OFF -->
+    <string name="show_admob_ad">ON</string>
+    <!-- Device ID  setTestDeviceIds (search on logcat for device id) -->
+    <string name="device_id">ABCD</string>
+    <!-- Admob APP ID HERE -->
+    <string name="admob_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <!-- Admob Ad Unit IDS Here -->
+    <string name="admob_INTERSTITIAL_UNIT_ID">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_BANNER_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="facebook_placement_id">YOUR_PLACEMENT_ID</string>
+    <string name="user_guideline_message">Do you want to follow the app guideline?</string>
+
+    <string name="app_about_txt_1">Time Date Converter will let you check time in over 7000 places.
+        It is an excellent tool for everybody who travels a lot, works with international clients or has family/friends abroad.
+        You don\'t even need to know the name of the time zone - just enter a continent/city and the app will find the current time in that place.
+        Converter lets you choose any date/time and convert time form one time zone to another.
+        This app also lets you create a list of your favorite time zones, so you can check time in those places without any hassle - just take one look at the main screen!.
+    </string>
+
+    <string name="app_about_txt_2">
+        Some of the possible uses include:
+    </string>
+
+    <string name="app_about_txt_3">
+        »   Find the best time to call/meeting/Trip planning your friends/relatives/clients living in a different time zone
+    </string>
+    <string name="app_about_txt_4">
+        »   Daylight Saving Time (DST) Switch dates and times
+    </string>
+    <string name="app_about_txt_5">
+        »   Holidays and office hours (good, not so good, not good)
+    </string>
+    <string name="app_about_txt_6">
+        »   Flags per country
+    </string>
+    <string name="app_about_txt_7">
+        »   Local Time zone and accepts Present, Past, Future dates
+    </string>
+    <string name="app_about_txt_8">
+        »   Current time zone UTC and Global UTC
+    </string>
+    <string name="app_about_txt_9">
+        »   UTC Time Difference (From 1st city)
+    </string>
+
+</resources>

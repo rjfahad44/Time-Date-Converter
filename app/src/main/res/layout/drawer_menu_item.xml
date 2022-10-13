@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <CheckBox
+        android:id="@+id/utcTimeCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:buttonTint="@color/check_box_color"
+        android:fontFamily="@font/roboto_bold"
+        android:minHeight="43dp"
+        android:text="Include UTC Time In Result"
+        android:textColor="@color/menu_text_color"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <CheckBox
+        android:id="@+id/timeZoneCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:buttonTint="@color/check_box_color"
+        android:checked="true"
+        android:fontFamily="@font/roboto_bold"
+        android:minHeight="43dp"
+        android:text="Show Time Zone"
+        android:textColor="@color/menu_text_color"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <CheckBox
+        android:id="@+id/holyDayAndOfficeCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:buttonTint="@color/check_box_color"
+        android:checked="true"
+        android:fontFamily="@font/roboto_bold"
+        android:minHeight="43dp"
+        android:text="Show Holidays and Office Hours"
+        android:textColor="@color/menu_text_color"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:textColor="#808080"
+            android:text="(" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/work_state_bg"
+            android:backgroundTint="@color/not_so_good_work_state_color"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="2dp"
+            android:text="Not So Good"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/work_state_bg"
+            android:backgroundTint="@color/not_good_work_state_color"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="2dp"
+            android:text="Not Good"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/work_state_bg"
+            android:backgroundTint="@color/good_work_state_color"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="2dp"
+            android:text="Good"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:text=")" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/currentTimeCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/check_box_color"
+        android:fontFamily="@font/roboto_bold"
+        android:minHeight="43dp"
+        android:text="Show Current Time"
+        android:textColor="@color/menu_text_color"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <CheckBox
+        android:id="@+id/timeDifferenceFromFirstCityCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:buttonTint="@color/check_box_color"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Show Time Difference"
+        android:textColor="@color/menu_text_color"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="#808080"
+        android:text="(From 1st City)" />
+
+
+    <CheckBox
+        android:id="@+id/timeFormatChangeCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:buttonTint="@color/check_box_color"
+        android:fontFamily="@font/roboto_bold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:minHeight="43dp"
+        android:text="12 Hours Time Format"
+        android:textColor="@color/menu_text_color" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#dee0df"/>
+
+
+    <RelativeLayout
+        android:id="@+id/userGuidelineRelativeLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="42dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/userGuideline_imgIc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_directions_walk" />
+
+        <TextView
+            android:id="@+id/userGuideline_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/userGuideline_imgIc"
+            android:fontFamily="@font/roboto_bold"
+            android:text="User Guideline"
+            android:textColor="@color/menu_text_color" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#dee0df"/>
+
+    <RelativeLayout
+        android:id="@+id/aboutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="42dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/about_ic"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_about" />
+
+        <TextView
+            android:id="@+id/about_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toRightOf="@id/about_ic"
+            android:fontFamily="@font/roboto_bold"
+            android:text="About"
+            android:textColor="@color/menu_text_color" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/versionCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textAlignment="center"
+            android:textColor="@color/menu_text_color" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_dialog_bg"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_alert"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/alert_font_color"
+            android:text="Are you sure you want to close application?"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dee0df"
+        android:layout_marginTop="31dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/noBtn"
+            android:layout_width="175dp"
+            android:layout_height="70dp"
+            android:text="No"
+            android:textSize="18sp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/no_btn_bg"
+            android:textColor="@color/alert_font_color"
+            android:fontFamily="@font/roboto_bold"
+            android:textAllCaps="false"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dee0df" />
+
+        <Button
+            android:id="@+id/yesBtn"
+            android:layout_width="175dp"
+            android:layout_height="70dp"
+            android:text="Yes"
+            android:textSize="18sp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/yes_btn_bg"
+            android:textColor="@color/alert_yes_btn_color"
+            android:fontFamily="@font/roboto_bold"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>
